@@ -1,0 +1,59 @@
+/* Wrapper */
+.truth-table-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Table */
+.truth-table {
+  border-collapse: collapse;
+  width: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  table-layout: fixed;
+}
+
+/* Table headers */
+.truth-table th {
+  color: white;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Default table cells */
+.truth-table td {
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  background-color: #f8f8f8; /* default for non-true/false cells */
+}
+
+/* Alternating row colors for non-true/false cells */
+.truth-table tr:nth-child(even) td:not(.cell-true):not(.cell-false) {
+  background-color: #e8f0fe;
+}
+
+/* True cell styling */
+.cell-true {
+  background-color: #d4f4dd !important;
+  color: #006400;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+/* False cell styling */
+.cell-false {
+  background-color: #f4d4d4 !important;
+  color: #a80000;
+  font-weight: bold;
+  transition: all 0.2s;
+}
