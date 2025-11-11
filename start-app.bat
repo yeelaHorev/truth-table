@@ -1,6 +1,6 @@
 @echo off
 
-SET iconPath=%~dp0src\assets\namma.ico
+SET iconPath=%~dp0src\assets\naama.ico
 :: Change to the directory of the batch file
 cd /d %~dp0
 
