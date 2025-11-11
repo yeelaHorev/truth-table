@@ -1,4 +1,14 @@
 @echo off
-:: Open the local index.html in the default browser
-start "" "%~dp0\dist\index.html"
+:: Change to the directory of the batch file
+cd /d %~dp0
+
+:: Start Node server in background
+start "" cmd /c "node server.js"
+
+:: Give the server a second to start (optional)
+timeout /t 2 /nobreak >nul
+
+:: Open default browser at localhost
+start "" "http://localhost:3000"
+
 exit
