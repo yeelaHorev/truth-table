@@ -1,6 +1,9 @@
 @echo off
 
 SET iconPath=%~dp0src\assets\naama.ico
+SET desktopPath=%USERPROFILE%\Desktop\Truth Table.lnk
+SET appPath=%~dp0start-app.bat
+
 :: Change to the directory of the batch file
 cd /d %~dp0
 
